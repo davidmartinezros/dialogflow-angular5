@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Message } from '@app/models';
-import { DialogflowService } from '@app/services';
+import { Message } from '../../models';
+import { DialogflowService } from '../../services';
 
 @Component({
   selector: 'message-form',
@@ -10,7 +10,7 @@ import { DialogflowService } from '@app/services';
 export class MessageFormComponent implements OnInit {
 
   @Input('message')
-  private message : Message;
+  public message : Message;
 
   @Input('messages')
   private messages : Message[];

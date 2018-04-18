@@ -1,5 +1,21 @@
+.titleText {
+  text-align: center;
+  color: orange;
+}
+
 .chatform{
-  width: 600px;
-  margin: 0 auto;
-  margin-top: 50px;
+  border: 1px solid #222929;
+  background: white;
+  width: 100%;
+  margin: auto;
+}
+
+.footer, .copyrights {
+  color: white;
+  text-align: center;
+}
+
+.footer:hover {
+  color: orange;
+  text-decoration: none;
 }
