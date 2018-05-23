@@ -1,4 +1,4 @@
-<div class="chatcontrol">
-  <input type="text" class="form-control chatinput" [(ngModel)]="message.content"/>
+<div class="chatcontrol" (keypress)="keyPressFunction($event)">
+  <input #inputText type="text" class="form-control chatinput" [(ngModel)]="message.content" placeholder="¿Qué estás pensando?"/>
   <button class="btn btn-success sendbtn" (click)="sendMessage()"><i class="fa fa-send-o"></i></button>
 </div>
